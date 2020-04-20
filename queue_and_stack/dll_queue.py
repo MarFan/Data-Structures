@@ -10,10 +10,14 @@ class Queue:
         # self.storage = ?
 
     def enqueue(self, value):
-        pass
+        # Add item to the end of the queue
+        return DoublyLinkedList.add_to_head(value)
 
     def dequeue(self):
-        pass
+        # Remove first item from list and return a value
+        value = DoublyLinkedList.remove_from_head(self)
+        return value
 
     def len(self):
-        pass
+        # return the number it items in the queue
+        return self.size
