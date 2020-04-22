@@ -51,7 +51,7 @@ class LRUCache:
             # self.cache[key] =  # update value in cache
 
         # has the limit been reached
-        if self.size >= self.limit:
+        if self.size == self.limit:
             # remove last node
             del self.cache[self.storage.tail.value[0]]
             self.storage.remove_from_tail()
