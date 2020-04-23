@@ -2,6 +2,7 @@ import unittest
 import random
 import sys
 import io
+import json
 from binary_search_tree import BinarySearchTree
 
 
@@ -77,7 +78,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         self.bst.insert(3)
         self.bst.insert(4)
         self.bst.insert(2)
-
+        
         self.bst.in_order_print(self.bst)
 
         output = sys.stdout.getvalue()
